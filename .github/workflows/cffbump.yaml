@@ -1,13 +1,19 @@
-name: "update cff"
+name: update cff
 
-# On releases
 on:
   push:
     branches:
-      - 'main'
+      - main
 
-- uses: btraven00/cffbump@v1
-  with:
-    git-min-commits: '1'
-    include-sources: 'git,crossref'
-    doi: '10.1371/journal.pone.0021373'
+jobs:
+  update-cff:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: btraven00/cffbump@v1
+        with:
+          git-min-commits: '1'
+          include-sources: 'git,crossref'
+          doi: '10.1371/journal.pone.0021373'
