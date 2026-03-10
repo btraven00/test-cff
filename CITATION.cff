@@ -20,9 +20,12 @@ authors:
   family-names: Brown
 - given-names: Magdalene
   family-names: So
+- family-names: cffbump[bot]
+  email: cffbump[bot]@users.noreply.github.com
 title: My Research Software
-version: 0.0.0
+version: 0.0.1
 identifiers:
 - type: doi
   value: 10.5281/zenodo.1234
-date-released: 2021-08-11
+date-released: '2026-03-10'
+commit: d10943c891554ac91c013a2294cc4d182eb65bd6
